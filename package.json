@@ -18,12 +18,15 @@
     "webpack": "2.x"
   },
   "devDependencies": {
-    "webpack-dev-server": "^2.x",
-    "react-hot-loader": "next"
+    "webpack-dev-server": "2.x",
+    "react-hot-loader": "next",
+    "jest": "20.x"
   },
   "scripts": {
     "build": "webpack --verbose --colors --display-error-details --config webpack.config.js",
     "watch": "webpack --verbose --colors --display-error-details --config webpack.config.js --watch",
-    "start": "webpack-dev-server --progress"
+    "start": "webpack-dev-server --progress",
+    "test": "jest",
+    "test:watch": "yarn test -- --watch"
   }
 }
