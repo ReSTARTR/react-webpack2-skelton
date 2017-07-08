@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 
 import configureStore from './store/configureStore'
 
-function Root(props) {
+export default function App(props) {
   const store = configureStore()
 
   return (
@@ -15,12 +15,3 @@ function Root(props) {
     </Provider>
   )
 }
-
-const container = document.getElementById('root')
-if (container) {
-    render(
-        <Root />,
-        container
-    )
-}
-
