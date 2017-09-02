@@ -1,4 +1,5 @@
 var express = require('express')
+var errorhandler = require('errorhandler')
 var app = express()
 var path = require('path')
 var React = require('../../dist/assets/server')
@@ -11,6 +12,14 @@ app.get('*', function(req, res, next) {
   React.default(req, res)
 })
 
+app.use(function(req, res, next) {
+  var error = new Error('Cannot ' + req.method + ' ' + req.path)
+  error.status = 404;
+  next(error);
+})
+app.use(errorhandler())
+
 app.listen(3000, function() {
   console.log('listening on port 3000')
 })
+
