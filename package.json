@@ -17,7 +17,7 @@
     "react-redux": "5.x",
     "redux": "3.x",
     "redux-thunk": "2.x",
-    "webpack": "2.x"
+    "webpack": "3.x"
   },
   "devDependencies": {
     "babel-jest": "20.x",

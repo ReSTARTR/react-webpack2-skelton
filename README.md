@@ -9,8 +9,8 @@ build
 ----
 
 ```sh
-$ yarn build
-$ node ./dist/assets/server.js
+$ yarn build # or yarn watch
+$ node ./src/server/server.js
 ```
 
 and start server on `:3000`
