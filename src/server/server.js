@@ -3,7 +3,8 @@ var app = express()
 var path = require('path')
 var React = require('../../dist/assets/server')
 
-app.use(express.static(path.join(__dirname, '..', 'dist')))
+var distDir = path.join(__dirname, '..', '..', 'dist')
+app.use(express.static(distDir))
 
 app.get('*', function(req, res, next) {
   // NOTE: https://stackoverflow.com/questions/33704714/cant-require-default-export-value-in-babel-6-x

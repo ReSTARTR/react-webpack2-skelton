@@ -9,7 +9,7 @@ function renderPage(content) {
     </head>
     <body>
         <div id="app'>${content}</div.
-        <script type="text/javascript" charset="utf-8" src="/assets/app.js"></script>
+        <script type="text/javascript" charset="utf-8" src="/assets/client.js"></script>
     </body>
     </html>`
 }
